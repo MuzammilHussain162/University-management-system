@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F7997F9-A92E-488A-BB6F-0085FC642C60}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BothLogin</RootNamespace>
+    <AssemblyName>BothLogin</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDasboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDasboard.Designer.cs">
+      <DependentUpon>AdminDasboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFee.Designer.cs">
+      <DependentUpon>AdminFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminlogin.Designer.cs">
+      <DependentUpon>Adminlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Courseandprogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Courseandprogram.Designer.cs">
+      <DependentUpon>Courseandprogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgootenpasswordSTUDENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgootenpasswordSTUDENT.Designer.cs">
+      <DependentUpon>ForgootenpasswordSTUDENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forgotten password admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forgotten password admin.Designer.cs">
+      <DependentUpon>Forgotten password admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registerstudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerstudent.Designer.cs">
+      <DependentUpon>registerstudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentlogin.Designer.cs">
+      <DependentUpon>studentlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Updatefeestudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Updatefeestudent.Designer.cs">
+      <DependentUpon>Updatefeestudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Updateprogramncourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Updateprogramncourse.Designer.cs">
+      <DependentUpon>Updateprogramncourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatestudentdata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatestudentdata.Designer.cs">
+      <DependentUpon>updatestudentdata.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminDasboard.resx">
+      <DependentUpon>AdminDasboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFee.resx">
+      <DependentUpon>AdminFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminlogin.resx">
+      <DependentUpon>Adminlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Courseandprogram.resx">
+      <DependentUpon>Courseandprogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgootenpasswordSTUDENT.resx">
+      <DependentUpon>ForgootenpasswordSTUDENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forgotten password admin.resx">
+      <DependentUpon>Forgotten password admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="registerstudent.resx">
+      <DependentUpon>registerstudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentlogin.resx">
+      <DependentUpon>studentlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updatefeestudent.resx">
+      <DependentUpon>Updatefeestudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updateprogramncourse.resx">
+      <DependentUpon>Updateprogramncourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatestudentdata.resx">
+      <DependentUpon>updatestudentdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
